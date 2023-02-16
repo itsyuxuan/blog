@@ -7,12 +7,16 @@ date: 2023-02-15
 
 ## 704. Binary Search 
 
-<u>二分法</u>：看到 ascending/descending array 就想到二分法
+**二分法**：看到 ascending/descending array 就想到二分法
 
 采用左闭右闭区间 [left, right] 的二分法，才有 mid + 1 和 mid - 1 的对称操作
+
 注意二分法 while 循环的条件是 left <= right
+
 注意 JavaScript 的除法会直接计算到小数，计算商要用 Math.floor() 方法
+
 时间复杂度：O(logn)
+
 空间复杂度：O(1)
 
 ```javascript
@@ -36,13 +40,16 @@ P.S. ChatGPT 修改 bug 信手拈来，针对一些耗时耗力的低级错误�
 
 ## 27. Remove Element
 
-<u>双指针法</u>：通过一个快指针和慢指针在一个 for 循环下完成两个 for 循环的工作
+**双指针法**：通过一个快指针和慢指针在一个 for 循环下完成两个 for 循环的工作
 
 题目要求原地修改元素，因而只循环一次
 
 快指针：寻找新数组的元素
+
 慢指针：指向新数组的下标
+
 时间复杂度：O(n)
+
 空间复杂度：O(1)
 
 ```javascript
@@ -57,5 +64,7 @@ const removeElement = function (nums, val) {
 ```
 
 P.S. JavaScript Increment operator **postfix** vs. **prefix**
+
 后缀式  `x++` 返回加一之前的值
+
 前缀式  `++x` 返回加一之后的值
